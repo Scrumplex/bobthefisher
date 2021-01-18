@@ -51,17 +51,6 @@
 #     set -g theme_project_dir_length 1
 #     set -g theme_newline_cursor yes
 
-# Polyfill for fish < 2.5.0
-if not type -q prompt_hostname
-    if not set -q __bobthefish_prompt_hostname
-        set -g __bobthefish_prompt_hostname (hostname | string replace -r '\..*' '')
-    end
-
-    function prompt_hostname
-        echo $__bobthefish_prompt_hostname
-    end
-end
-
 function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     # Save the last status for later (do this before anything else)
     set -l last_status $status
