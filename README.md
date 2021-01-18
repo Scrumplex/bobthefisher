@@ -1,17 +1,15 @@
-# bobthefish
+# bobthefisher
 
-`bobthefish` is a Powerline-style, Git-aware [fish][fish] theme optimized for awesome.
-
-[![Oh My Fish](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish) [![MIT License](https://img.shields.io/github/license/oh-my-fish/theme-bobthefish.svg?style=flat)](/LICENSE.md)
+`bobthefisher` is a Powerline-style, Git-aware [fish][fish] theme optimized for awesome.
 
 ![bobthefish][screencast]
 
 
 ### Installation
 
-Be sure to have Oh My Fish installed. Then just:
+Be sure to have [fisher][fisher] installed. Then just:
 
-    omf install bobthefish
+    fisher install Scrumplex/bobthefisher
 
 You will need a [Powerline-patched font][patching] for this to work, unless you enable the compatibility fallback option:
 
@@ -21,7 +19,7 @@ You will need a [Powerline-patched font][patching] for this to work, unless you 
 
     set -g theme_nerd_fonts yes
 
-This theme is based loosely on [agnoster][agnoster].
+This theme is based on [OMF bobthefish][bobthefish] and therefore loosely on [agnoster][agnoster].
 
 
 ### Features
@@ -236,6 +234,8 @@ end
 [fonts]:      https://github.com/Lokaltog/powerline-fonts
 [nerd-fonts]: https://github.com/ryanoasis/nerd-fonts
 [agnoster]:   https://gist.github.com/agnoster/3712874
+[bobthefish]: https://github.com/oh-my-fish/theme-bobthefish
+[fisher]:     https://github.com/jorgebucaran/fisher
 
 [dark]:            https://cloud.githubusercontent.com/assets/53660/16141569/ee2bbe4a-3411-11e6-85dc-3d9b0226e833.png "dark"
 [light]:           https://cloud.githubusercontent.com/assets/53660/16141570/f106afc6-3411-11e6-877d-fc2a8f6d3175.png "light"
