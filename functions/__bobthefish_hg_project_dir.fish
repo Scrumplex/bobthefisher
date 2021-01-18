@@ -16,6 +16,6 @@ function __bobthefish_hg_project_dir -S -a real_pwd -d 'Print the current hg pro
         [ "$d" = '/' ]
         and return
 
-        set d (__bobthefish_dirname $d)
+        set d (dirname $d)
     end
 end

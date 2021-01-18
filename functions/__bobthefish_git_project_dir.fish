@@ -30,7 +30,7 @@ function __bobthefish_git_project_dir -S -a real_pwd -d 'Print the current git p
             [ "$d" = '/' ]
             and return
 
-            set d (__bobthefish_dirname $d)
+            set d (dirname $d)
         end
         return
     end
@@ -58,7 +58,7 @@ function __bobthefish_git_project_dir -S -a real_pwd -d 'Print the current git p
             return
     end
 
-    set -l project_dir (__bobthefish_dirname $git_dir)
+    set -l project_dir (dirname $git_dir)
 
     switch $real_pwd/
         case $project_dir/\*

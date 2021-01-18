@@ -81,7 +81,7 @@ function __bobthefish_prompt_git -S -a git_root_dir -a real_pwd -d 'Display the 
 
         # handle work_dir != project dir
         if [ "$work_dir" ]
-            set -l work_parent (__bobthefish_dirname $work_dir)
+            set -l work_parent (dirname $work_dir)
             if [ "$work_parent" ]
                 echo -n "$work_parent/"
             end
