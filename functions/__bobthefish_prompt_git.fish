@@ -88,7 +88,7 @@ function __bobthefish_prompt_git -S -a git_root_dir -a real_pwd -d 'Display the 
 
             set_color normal
             set_color -b $color_repo_work_tree
-            echo -n (__bobthefish_basename $work_dir)
+            echo -n (basename $work_dir)
 
             set_color normal
             set_color -b $colors

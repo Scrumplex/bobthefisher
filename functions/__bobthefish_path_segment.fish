@@ -19,7 +19,7 @@ function __bobthefish_path_segment -S -a segment_dir -d 'Display a shortened for
             set directory '~'
         case '*'
             set parent (__bobthefish_pretty_parent "$segment_dir")
-            set directory (__bobthefish_basename "$segment_dir")
+            set directory (basename "$segment_dir")
     end
 
     echo -n $parent
