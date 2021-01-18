@@ -7,9 +7,11 @@
 
 ### Installation
 
-Be sure to have [fisher][fisher] installed. Then just:
+Be sure to have [fisher][fisher] installed.
 
-    fisher install Scrumplex/bobthefisher
+```shell
+fisher install jorgebucaran/humantime.fish Scrumplex/bobthefisher
+```
 
 You will need a [Powerline-patched font][patching] for this to work, unless you enable the compatibility fallback option:
 
